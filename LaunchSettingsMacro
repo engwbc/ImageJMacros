@@ -1,0 +1,12 @@
+macro "Startup" {
+  print("Initialising startup macro...")
+  open("S:/Project/Concatenated Stacks D1 D3 8bit wo O4 every 30min .tif");
+  //run("Brightness/Contrast...");
+  run("Enhance Contrast", "saturated=0.35");
+  //setTool("freehand");
+  run("Set Scale...", "distance=1 known=0.33333 unit=um");
+  run("ROI Manager...");
+  print("All set")
+  wait(3)
+  close(Log)
+}
