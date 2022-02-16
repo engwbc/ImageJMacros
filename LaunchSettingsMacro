@@ -8,5 +8,6 @@ macro "Startup" {
   run("ROI Manager...");
   print("All set")
   wait(3)
-  close(Log)
+  selectWindow("Log");
+  run("Close");
 }
