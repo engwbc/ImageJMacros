@@ -1,10 +1,10 @@
 macro "Startup" {
   print("Initialising startup macro...")
-  open("S:/Project/Concatenated Stacks D1 D3 8bit wo O4 every 30min .tif");
+  open(path); // Set to desired stack ie "C:/user/stack.tif"
   //run("Brightness/Contrast...");
-  run("Enhance Contrast", "saturated=0.35");
-  //setTool("freehand");
-  run("Set Scale...", "distance=1 known=0.33333 unit=um");
+  run("Enhance Contrast", "saturated=0.35"); // Setting auto B&C
+  //setTool("freehand"); // Can be changed to other selection tools ie. segmented line 
+  run("Set Scale...", "distance=1 known=0.33333 unit=um"); // 1 pixel = 0.333 microns
   run("ROI Manager...");
   print("All set")
   wait(3)
