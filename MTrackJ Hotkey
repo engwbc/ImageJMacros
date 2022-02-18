@@ -1,0 +1,5 @@
+// Made this because you have to restart MTrackJ everytime you want to display a different ROI set.
+// Binds F1 to quickly open up MTrackJ plugin in FIJI/ImageJ. If F1 is already bound to another function, feel free to change it to another key.
+macro 'MTrackJ [F1]' {
+  run("MTrackJ");
+}
